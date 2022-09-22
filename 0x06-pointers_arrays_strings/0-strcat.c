@@ -1,36 +1,27 @@
+#include "main.h"
+
 /**
- * _strcat - function that concatenates
- * 		two strings.
+ *strcat Concatenates the string pointed to by @src , including the terminat
+ *	null byte , to the end of the string pointed to by @dest.
+ * @dest : A pointer to the string to be concatenated upon.
+ * @src : The source string to be appended to @dest.
  *
- * @dest: pointer to destination input
- * @src: pointer to source Input
- *
- * Return: pointer to resulting string @dest
+ * Return : A pointer to the destination string @dest.
  */
 
-
-
-	Char * _strcat(char *dest, char *src)
+			char *strcat ( char *dest , const char *src )
 
 {
 
-	int c , c2;
+	        int index = 0, dest_len = 0;
 
-	c = 0;
+			        while ( dest [ index ++ ] )
 
-	/*find the size of dest array*/
+					                dest_len ++ ;
 
-	while (dest[c])
+		        for ( index ; src [ index ] ; index ++ )
 
-		c++;                                   I
+				                dest [ dest_len ++ ] = src [ index ] ;
 
-			/* Iterate through each sec array value without the null byte*/
-
-			for (c2 = 0; src[c2] ; c2++)
-
-				/*append src[c2] to dest[c] while overwritting the null byte in dest*/
-
-				dest[c++] = src[c2];
-
-return (dest);
+			        return ( dest ) ;
 }

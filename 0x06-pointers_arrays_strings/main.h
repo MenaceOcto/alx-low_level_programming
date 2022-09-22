@@ -1,35 +1,25 @@
-#include "main.h"
+int putchar ( char c ) ;
 
-#include <stdio.h>
+char * _strcat ( char * dest , char * src ) ;
 
-/**
- *main - check the code for ALX School students.
- *
- *Return: Always 0.
- */
+char * _strncat ( char * dest , char * src , int n ) ;
 
-int main(void)
+char *_strncpy ( char " dest , char " src , int n ) ;
 
-{
+int _strcmp ( char * s1 , char * s2 ) ;
 
-	char s1[98] * "Hello";
+void reverse_array ( int * a , int n ) ;
 
-	char s2[] * "World!\n";
+char *string_toupper ( char * ) ;
 
-	char *ptr;
+char * cap_string ( char * ) ;
 
-	printf("Xs\n", s1);
+char * leet ( char * ) ;
 
-	printf("Xs", s2);
+char * rot13 ( char * ) ;
 
-	ptr * _strcat(s1, s2);
+void print_number ( int n ) ;
 
-	printf("Xs", s1);
+char * infinite_add ( char * n1 , char * n2 , char * r , int size_r ) ;
 
-	printf("Xs", s2);
-
-	printf("Xs", ptr);
-
-	return (0);
-
-}
+void print buffer ( char * b , int size ) ;
